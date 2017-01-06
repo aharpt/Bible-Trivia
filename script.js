@@ -16,13 +16,11 @@ var QuestionsCreator = function (question, answer, incorrectAnswer1, incorrectAn
   };
 };
 // Calling QuestionsCreator
-
-var questionOne = QuestionsCreator("In how many days did God create the earth?", "6 days", "7 days", "8 days", "5 days", "9 days");
-var questionTwo = QuestionsCreator("What is the third commandment about?", "Not taking the Lord's name in vain", "Not making a graven image", "Keeping the Sabbath holy", "Not coveting", "Honoring your father and your mother")
-var questionThree = QuestionsCreator("How many times did Joshua and his army march around Jericho?", "13 times", "7 times", "6 times", "5 times", "12 times");
-var questionFour = QuestionsCreator("Who did Esther succeed as queen?", "Vashti", "Abigail", "Rahab", "Rebekah", "None of the above");
-var questionFive = QuestionsCreator("Which son of David, succeeded him as king?", "Solomon", "Adinijah", "Absalom", "Jeroboahm", "Rehoboam");
-
+var questionOne = QuestionsCreator('In how many days did God create the earth?', '6 days', '7 days', '8 days', '5 days', '9 days');
+var questionTwo = QuestionsCreator('What is the third commandment about?', 'Not taking the Lord\'s name in vain', 'Not making a graven image', 'Keeping the Sabbath holy', 'Not coveting', 'Honoring your father and your mother');
+var questionThree = QuestionsCreator('How many times did Joshua and his army march around Jericho?', '13 times', '7 times', '6 times', '5 times', '12 times');
+var questionFour = QuestionsCreator('Who did Esther succeed as queen?', 'Vashti', 'Abigail', 'Rahab', 'Rebekah', 'None of the above');
+var questionFive = QuestionsCreator('Which son of David, succeeded him as king?', 'Solomon', 'Adinijah', 'Absalom', 'Jeroboahm', 'Rehoboam');
 // Creating array for each section
 var sectionOneArray = [];
 sectionOneArray.push(questionOne);
@@ -30,8 +28,6 @@ sectionOneArray.push(questionTwo);
 sectionOneArray.push(questionThree);
 sectionOneArray.push(questionFour);
 sectionOneArray.push(questionFive);
-
-
 var randomNumber1 = randomNumber(sectionOneArray.length);
 console.log('randomNumber 1 is: ' + randomNumber1);
 // UI
@@ -53,7 +49,6 @@ var randomOption4 = randomNumber(3) + 1;
 var $correctAnswer4 = $('#optionsRadios' + randomOption4);
 var randomOption5 = randomNumber(3) + 1;
 var $correctAnswer5 = $('#optionsRadios' + randomOption5);
-
 // Choosing element for first question
 // Adding correct text to jumbotron and correct answer span
 $('.jumbotron h3').html(sectionOneArray[randomNumber1].question);
@@ -118,7 +113,7 @@ $('.submit-button').click(function () {
   createQuestion(1, 3, sectionOneArray, $correctAnswer3);
   createQuestion(2, 4, sectionOneArray, $correctAnswer4);
   createQuestion(3, 5, sectionOneArray, $correctAnswer5);
-  cre
+  cre;
 });
 // Dropdown plugin
 $('.dropdown-toggle').dropdown();
