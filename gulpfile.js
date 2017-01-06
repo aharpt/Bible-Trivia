@@ -10,13 +10,3 @@ gulp.task("fixmyjs", function () {
   }))
   .pipe(gulp.dest("./"));
 });
-
-gulp.task("jslint", function () {
-  return gulp.src("./section-4/script.js")
-  .pipe(jslint({
-    browser: true,
-    devel: true,
-    global: ["$", "window"]
-  }))
-  .pipe(jslint.reporter("default"));
-});
