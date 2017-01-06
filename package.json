@@ -1,0 +1,24 @@
+{
+  "name": "driverstest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aharpt/Written-Drivers-Practice-Test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aharpt/Written-Drivers-Practice-Test/issues"
+  },
+  "homepage": "https://github.com/aharpt/Written-Drivers-Practice-Test#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-fixmyjs": "^1.0.2",
+    "gulp-jshint": "^2.0.4"
+  }
+}
