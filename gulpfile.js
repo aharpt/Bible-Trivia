@@ -4,9 +4,9 @@ var jshint = require("gulp-jshint");
 
 
 gulp.task("fixmyjs", function () {
-  gulp.src("./script.js")
+  gulp.src("./new-testament/script.js")
   .pipe(fixmyjs({
 
   }))
-  .pipe(gulp.dest("./"));
+  .pipe(gulp.dest("./new-testament"));
 });

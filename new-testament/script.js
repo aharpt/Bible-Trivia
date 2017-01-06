@@ -16,14 +16,11 @@ var QuestionsCreator = function (question, answer, incorrectAnswer1, incorrectAn
   };
 };
 // Calling QuestionsCreator
-
-var questionOne = QuestionsCreator("What town was Jesus born in?", "Bethlehem", "Nazareth", "Egypt", "Judea", "Jerusalem");
-var questionTwo = QuestionsCreator("How many disciples followed Jesus for a period of around three years?", "twelve", "eleven", "ten", "thirteen", "fourteen");
-var questionThree = QuestionsCreator("What was Matthew's profession before following Jesus?", "tax collector", "doctor", "fisherman", "carpenter", "farmer");
-var questionFour = QuestionsCreator("Who baptized Jesus in the Jordan river?", "John the Baptist", "John the disciple", "Peter", "James", "Paul");
-var questionFive = QuestionsCreator("How many chapters are in the book of 1 Corinthians?", "16", "34", "17", "15", "14");
-
-
+var questionOne = QuestionsCreator('What town was Jesus born in?', 'Bethlehem', 'Nazareth', 'Egypt', 'Judea', 'Jerusalem');
+var questionTwo = QuestionsCreator('How many disciples followed Jesus for a period of around three years?', 'twelve', 'eleven', 'ten', 'thirteen', 'fourteen');
+var questionThree = QuestionsCreator('What was Matthew\'s profession before following Jesus?', 'tax collector', 'doctor', 'fisherman', 'carpenter', 'farmer');
+var questionFour = QuestionsCreator('Who baptized Jesus in the Jordan river?', 'John the Baptist', 'John the disciple', 'Peter', 'James', 'Paul');
+var questionFive = QuestionsCreator('How many chapters are in the book of 1 Corinthians?', '16', '34', '17', '15', '14');
 // Creating array for each section
 var newTestamentArray = [];
 newTestamentArray.push(questionOne);
@@ -31,7 +28,6 @@ newTestamentArray.push(questionTwo);
 newTestamentArray.push(questionThree);
 newTestamentArray.push(questionFour);
 newTestamentArray.push(questionFive);
-
 var randomNumber1 = randomNumber(newTestamentArray.length);
 console.log('randomNumber 1 is: ' + randomNumber1);
 // UI
@@ -53,7 +49,6 @@ var randomOption4 = randomNumber(3) + 1;
 var $correctAnswer4 = $('#optionsRadios' + randomOption4);
 var randomOption5 = randomNumber(3) + 1;
 var $correctAnswer5 = $('#optionsRadios' + randomOption5);
-
 // Choosing element for first question
 // Adding correct text to jumbotron and correct answer span
 $('.jumbotron h3').html(newTestamentArray[randomNumber1].question);
@@ -64,8 +59,6 @@ $('.second-question-span').html(newTestamentArray[randomNumber1].incorrectAnswer
 $('.third-question-span').html(newTestamentArray[randomNumber1].incorrectAnswer3);
 $('.fourth-question-span').html(newTestamentArray[randomNumber1].incorrectAnswer4);
 $correctAnswer1.parent('label').children('span').html(newTestamentArray[randomNumber1].answer);
-
-
 // 1. Add click event
 $('.submit-button').click(function () {
   $('.alert').remove();
@@ -84,9 +77,6 @@ $('.submit-button').click(function () {
   $('.correct-answers-span').text(correctAnswers);
   $('.incorrect-answers-span').text(incorrectAnswers);
 });
-
-
-
 var indiciesUsed = [];
 indiciesUsed.push(randomNumber1);
 var createQuestion = function (numberOfClicks, rNum, array, correctAnswer) {
