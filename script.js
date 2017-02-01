@@ -113,7 +113,6 @@ $('.submit-button').click(function () {
   createQuestion(1, 3, sectionOneArray, $correctAnswer3);
   createQuestion(2, 4, sectionOneArray, $correctAnswer4);
   createQuestion(3, 5, sectionOneArray, $correctAnswer5);
-  cre;
 });
 // Dropdown plugin
 $('.dropdown-toggle').dropdown();
