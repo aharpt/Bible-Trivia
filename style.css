@@ -1,5 +1,5 @@
-.button-row {
-  margin-top: 30px;
+.whole {
+  min-height: calc(100vh - 50px);
 }
 
 .navbar-inverse {
@@ -16,4 +16,17 @@ h3 {
   margin: auto;
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+.button-row {
+  margin-top: 30px;
+}
+
+
+footer {
+  height: 50px;
+}
+
+footer p {
+  margin-left: 20px;
 }

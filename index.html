@@ -7,83 +7,88 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <nav class="navbar navbar-inverse">
-<div class="container-fluid">
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="#">Quotes Trivia</a>
-  </div>
-</div><!-- /.container-fluid -->
-</nav>
-    <div class="jumbotron">
+    <div class="whole">
+      <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Quotes Trivia</a>
+          </div>
+        </div><!-- /.container-fluid -->
+      </nav>
+      <div class="jumbotron">
+        <div class="container">
+          <h3>Heading 3</h3>
+        </div>
+      </div>
       <div class="container">
-        <h3>Heading 3</h3>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3">
-          <div class="radio">
-            <label>
-              <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-              <span class="first-question-span">
-              Option one is this and that&mdash;be sure to include why it's great
-              </span>
-            </label>
-          </div>
-        </div>
-        <div class="col-lg-3">
+        <div class="row">
+          <div class="col-lg-3">
             <div class="radio">
               <label>
-                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" checked>
-                <span class="second-question-span">
+                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                <span class="first-question-span">
                 Option one is this and that&mdash;be sure to include why it's great
                 </span>
               </label>
             </div>
-        </div><!-- /.col-lg-3 -->
-        <div class="col-lg-3">
+          </div>
+          <div class="col-lg-3">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option1" checked>
+                  <span class="second-question-span">
+                  Option one is this and that&mdash;be sure to include why it's great
+                  </span>
+                </label>
+              </div>
+          </div><!-- /.col-lg-3 -->
+          <div class="col-lg-3">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="optionsRadios" id="optionsRadios3" value="option1" checked>
+                  <span class="third-question-span">
+                  Option one is this and that&mdash;be sure to include why it's great
+                  </span>
+                </label>
+              </div>
+          </div><!-- /.col-lg-3 -->
+
+          <div class="col-lg-3">
             <div class="radio">
               <label>
-                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option1" checked>
-                <span class="third-question-span">
+                <input type="radio" name="optionsRadios" id="optionsRadios4" value="option1" checked>
+                <span class="fourth-question-span">
                 Option one is this and that&mdash;be sure to include why it's great
                 </span>
               </label>
             </div>
-        </div><!-- /.col-lg-3 -->
+          </div><!-- /.col-lg-3 -->
+        </div><!-- /.row -->
 
-        <div class="col-lg-3">
-          <div class="radio">
-            <label>
-              <input type="radio" name="optionsRadios" id="optionsRadios4" value="option1" checked>
-              <span class="fourth-question-span">
-              Option one is this and that&mdash;be sure to include why it's great
-              </span>
-            </label>
+        <div class="row button-row">
+          <div class="col-lg-2">
+            <input class="btn btn-default submit-button" type="button" value="Submit">
           </div>
-        </div><!-- /.col-lg-3 -->
-      </div><!-- /.row -->
+          <div class="col-lg-2">
+            <h4>Correct Answers: <span class="correct-answers-span">0</span></h4>
+          </div>
+          <div class="col-lg-3">
+            <h4>Incorrect Answers: <span class="incorrect-answers-span">0</span></h4>
+          </div>
+        </div>
 
-      <div class="row button-row">
-        <div class="col-lg-2">
-          <input class="btn btn-default submit-button" type="button" value="Submit">
-        </div>
-        <div class="col-lg-2">
-          <h4>Correct Answers: <span class="correct-answers-span">0</span></h4>
-        </div>
-        <div class="col-lg-3">
-          <h4>Incorrect Answers: <span class="incorrect-answers-span">0</span></h4>
-        </div>
-      </div>
-
+  </div>
 </div>
+<footer>
+  <p>All quotes taken from <a href="https://en.wikiquote.org/wiki/Main_Page">Wikimedia Quotes</a></p>
+</footer>
 
 
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
