@@ -3,24 +3,22 @@
 var randomNumber = function (highNumber) {
   return Math.floor(Math.random() * highNumber);
 };
-// 1. Create QuestionCreater Object
+// 1. Create QuestionCreater Constructor
 // Question Creator for Section One
 var QuestionsCreator = function (question, answer, incorrectAnswer1, incorrectAnswer2, incorrectAnswer3, incorrectAnswer4) {
-  return {
-    question: question,
-    answer: answer,
-    incorrectAnswer1: incorrectAnswer1,
-    incorrectAnswer2: incorrectAnswer2,
-    incorrectAnswer3: incorrectAnswer3,
-    incorrectAnswer4: incorrectAnswer4
-  };
+    this.question = question;
+    this.answer = answer;
+    this.incorrectAnswer1 = incorrectAnswer1;
+    this.incorrectAnswer2 = incorrectAnswer2;
+    this.incorrectAnswer3 = incorrectAnswer3;
+    this.incorrectAnswer4 = incorrectAnswer4;
 };
 // Calling QuestionsCreator
-var questionOne = QuestionsCreator('Which of the following is a quote from Aristotle?', 'My lectures are published and not published; they will be intelligible to those who heard them, and to none beside.', 'If any one were to ask me what in my opinion was the dullest and most stupid spot on the face of the Earth, I should decidedly say Chelmsford.', 'It was a good thing to have a couple of thousand people all rigid and frozen together, in the palm of one\'s hand.', 'Resisting the slow touch of a frozen finger tracing out my spine.', 'The dignity of his office is never impaired by the absence of efforts on his part to maintain it.');
-var questionTwo = QuestionsCreator('Which of the following is a quote from Charles Dickins?', 'I used to sit, think, think, thinking, till I felt as lonesome as a kitten in a wash–house copper with the lid on.', 'Knowledge of the fact differs from knowledge of the reason for the fact.', 'That body is heavier than another which, in an equal bulk, moves downward quicker.', 'In all things of nature there is something of the marvelous.', 'We should venture on the study of every kind of animal without distaste; for each and all will reveal to us something natural and something beautiful.');
-var questionThree = QuestionsCreator('Which of the following is a quote from Albert Einstein?', 'Unthinking respect for authority is the greatest enemy of truth.', 'The dignity of his office is never impaired by the absence of efforts on his part to maintain it.', 'I used to sit, think, think, thinking, till I felt as lonesome as a kitten in a wash–house copper with the lid on.', 'The civility which money will purchase, is rarely extended to those who have none.', 'Grief never mended no broken bones, and as good people’s wery scarce, what I says is, make the most on \’em.');
-var questionFour = QuestionsCreator('Which of the following is a quote from Ralph Waldo Emerson?', 'The man who renounces himself, comes to himself.', 'We shall therefore assume the complete physical equivalence of a gravitational field and a corresponding acceleration of the reference system.', 'In so far as theories of mathematics speak about reality, they are not certain, and in so far as they are certain, they do not speak about reality.', 'Whether you can observe a thing or not depends on the theory which you use. It is the theory which decides what can be observed.', 'If A is success in life, then A = x + y + z. Work is x, play is y and z is keeping your mouth shut.');
-var questionFive = QuestionsCreator('WWhich of the following is a quote from Helen Keller?', 'One can never consent to creep when one feels an impulse to soar.', 'The sublime is excited in me by the great stoical doctrine, Obey thyself.', 'The imitator dooms himself to hopeless mediocrity.', 'There is always a certain meanness in the argument of conservatism, joined with a certain superiority in its fact.', 'The thing done avails, and not what is said about it. An original sentence, a step forward, is worth more than all the censures.');
+var questionOne = new QuestionsCreator('Which of the following is a quote from Aristotle?', 'My lectures are published and not published; they will be intelligible to those who heard them, and to none beside.', 'If any one were to ask me what in my opinion was the dullest and most stupid spot on the face of the Earth, I should decidedly say Chelmsford.', 'It was a good thing to have a couple of thousand people all rigid and frozen together, in the palm of one\'s hand.', 'Resisting the slow touch of a frozen finger tracing out my spine.', 'The dignity of his office is never impaired by the absence of efforts on his part to maintain it.');
+var questionTwo = new QuestionsCreator('Which of the following is a quote from Charles Dickins?', 'I used to sit, think, think, thinking, till I felt as lonesome as a kitten in a wash–house copper with the lid on.', 'Knowledge of the fact differs from knowledge of the reason for the fact.', 'That body is heavier than another which, in an equal bulk, moves downward quicker.', 'In all things of nature there is something of the marvelous.', 'We should venture on the study of every kind of animal without distaste; for each and all will reveal to us something natural and something beautiful.');
+var questionThree = new QuestionsCreator('Which of the following is a quote from Albert Einstein?', 'Unthinking respect for authority is the greatest enemy of truth.', 'The dignity of his office is never impaired by the absence of efforts on his part to maintain it.', 'I used to sit, think, think, thinking, till I felt as lonesome as a kitten in a wash–house copper with the lid on.', 'The civility which money will purchase, is rarely extended to those who have none.', 'Grief never mended no broken bones, and as good people’s wery scarce, what I says is, make the most on \’em.');
+var questionFour = new QuestionsCreator('Which of the following is a quote from Ralph Waldo Emerson?', 'The man who renounces himself, comes to himself.', 'We shall therefore assume the complete physical equivalence of a gravitational field and a corresponding acceleration of the reference system.', 'In so far as theories of mathematics speak about reality, they are not certain, and in so far as they are certain, they do not speak about reality.', 'Whether you can observe a thing or not depends on the theory which you use. It is the theory which decides what can be observed.', 'If A is success in life, then A = x + y + z. Work is x, play is y and z is keeping your mouth shut.');
+var questionFive = new QuestionsCreator('WWhich of the following is a quote from Helen Keller?', 'One can never consent to creep when one feels an impulse to soar.', 'The sublime is excited in me by the great stoical doctrine, Obey thyself.', 'The imitator dooms himself to hopeless mediocrity.', 'There is always a certain meanness in the argument of conservatism, joined with a certain superiority in its fact.', 'The thing done avails, and not what is said about it. An original sentence, a step forward, is worth more than all the censures.');
 // Creating array for each section
 var sectionOneArray = [];
 sectionOneArray.push(questionOne);
